@@ -1,0 +1,15 @@
+title Excercise 0.6
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over Browser
+POST Request containing the 
+new note over as JSON data.
+end note
+
+Server-->Browser: HTML-code
+
+note over Server
+Server doesn't ask for a redirect,
+browser stays on the same page.
+end note

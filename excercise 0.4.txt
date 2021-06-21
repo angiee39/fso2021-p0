@@ -1,0 +1,28 @@
+title Excercise 0.4
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over Browser
+POST request to the server address.
+end note
+
+Server-->Browser: URL Redirect
+
+note over Server
+Server asks the browser to do a new 
+HTTP GET request to the given address
+end note
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: HTML-code
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main.js
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: [{"content":"Heissan","date":"2021-06-20T14:11:13.818Z"},...]
+
+
